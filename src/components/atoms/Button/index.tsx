@@ -1,11 +1,15 @@
-import * as React from "react";
+import React from "react";
+import { Root, Color } from "./styled";
 
-export const Button = () => {
-    return (
-        <button
-            type="button"
-        >
-            Button
-        </button>
-    );
+interface Props {
+  text: string;
+  color: Color;
+}
+
+export const Button: React.VFC<Props> = ({ text, color }) => {
+  return (
+    <Root type="button" color={color}>
+      {text}
+    </Root>
+  );
 };

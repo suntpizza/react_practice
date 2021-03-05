@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from ".";
+import { Link } from ".";
 
 export default {
-  title: "Atom/Button",
-  component: Button,
+  title: "Atom/Link",
+  component: Link,
 };
 
-const Template = () => <Button text="あああ" color="primary" />;
+const Template = () => <Link text="Learn more" />;
 
 export const Primary = Template.bind({});
 // Primary.args = {
